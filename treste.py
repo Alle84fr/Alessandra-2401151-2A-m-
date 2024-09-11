@@ -12,7 +12,9 @@ def form_cpf(c):
           do meio serão transformadas em x, pegaremos
           os dois últimos valores ( está negativo por estar voltando
           e deixaremos na forma origonal
-          por fim , para impressão sair correta, )"""
+          por fim , para impressão sair correta, )
+          """
+
           part1 = c[:3] #pelo que entendi - o - dtês serão os três primeiors  valores da str
           part2 = "xxx"
           part4 = "xxx"
@@ -22,5 +24,5 @@ def form_cpf(c):
 
           print(ccc)
 
-form_cpf("123.456.789-69")
+
 
