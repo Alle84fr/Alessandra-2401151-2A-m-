@@ -21,7 +21,7 @@ class Cliente:
 
                     part1 = cpf[:3] #pelo que entendi - o - dtês serão os três primeiors  valores da str
                     part2 = "xxx"
-                     part4 = "xxx"
+                    part4 = "xxx"
                     part3 = cpf[-2:]  #pelo que entendi - o - dois serão os dois primeiors últimos valores da str
 
                     cpf_exib = f" {part1}.{part2}.{part4}-{part3}"
@@ -45,21 +45,21 @@ class Cliente:
                     else: self.registrar_trans
 
 
-          def depositar(self):
+          def depositar(self, valor):
                     self.__saldo += valor 
                     novo_saldo = self.__saldo
                     self.registrar_trans
 
                     return novo_saldo
           
-          def retirar(self):
-                    if saldo >= valor: 
+          def retirar(self, valor):
+                    if self._saldo >= valor: 
                               novo_saldo = self.__saldo -= valor
                               self.registrar_trans
                     else:
                               print(f"Saldo insuficiente para realizar transação")
                     
-                    return novo_saldo
+                    return self._novo_saldo
           
           def trans_pix(self, valor, destinatario):
                     pix = Pix(self, destinatario, valor):
